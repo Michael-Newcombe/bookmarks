@@ -1,0 +1,13 @@
+.pagination-button{
+  border: none;
+  padding: 16px 32px;
+  background: #1F51FF;
+  color: #fff;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  margin: 16px;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

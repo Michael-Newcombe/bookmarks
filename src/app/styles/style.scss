@@ -1,0 +1,65 @@
+@import './helpers';
+@import './bookmarks';
+@import './forms';
+@import './pagination';
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  // background: linear-gradient(89deg, #051626 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+  background: #051626;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main{
+  margin: auto;
+  width: 600px;
+}
+
+h2{
+  color: #fff;
+  font-weight: 300;
+}
+
+a{
+  color: #fff;
+}
+
+button, input[type=submit]{
+  cursor: pointer;
+}
+
+.hide{
+  opacity: 0;
+}
+
+.show{
+  opacity: 1;
+}
+
+.message{
+  margin: 8px;
+  text-align: center;
+}
+
+.disable{
+  pointer-events: none;
+}
+
+.circle{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(#5E5DF0, transparent);
+  border-radius: 50%;
+}
+
+

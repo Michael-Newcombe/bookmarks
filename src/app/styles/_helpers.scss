@@ -1,0 +1,45 @@
+$font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+@mixin default-button-style{
+  border: none;
+  background: none;
+}
+
+@mixin glassmorphism{
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+backdrop-filter: blur(11px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@mixin input-style{
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 4px;
+  border:  none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@mixin save-cancel-btn{
+  display: block;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 0;
+  width: 75px;
+}

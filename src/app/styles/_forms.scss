@@ -1,0 +1,75 @@
+.add-bookmark-form{
+  width: 550px;
+  margin: 16px auto 8px auto;
+  font-family: $font;
+  input{
+    width: 100%;
+    margin: 4px 0;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+  }
+  input[type=submit]{
+    background: #1F51FF;
+    color: #fff;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+
+  }
+}
+
+.form-container{
+  position: relative;
+}
+
+.edit-bookmark-form{
+  position: absolute;
+  left: 16px;
+  @include flex-row();
+  // margin: 0 0 22px 16px;
+
+  width: 89%;
+  input[type=text]{
+    @include input-style();
+  }
+  input[type=url]{
+    @include input-style();
+  }
+  .input-name{
+    margin-bottom: 8px;
+  }
+
+}
+
+.edit-fields-container{
+  width: 70%;
+  .name-field-container, .url-field-container{
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+label{
+  width: 55px;
+  font-size: 14px;
+}
+
+.edit-bookmark-buttons{
+  margin-left: 2rem;
+  padding: 16px;
+  font-family: $font;
+}
+
+.save-button{
+  @include save-cancel-btn();
+  background: #2cbc63;
+  color: white;
+  margin: 0 0 8px 8px;
+
+}
+.cancel-button{
+  @include save-cancel-btn();
+  margin-left: 8px;
+  background: #efefee;
+  color: #000;
+}
+
